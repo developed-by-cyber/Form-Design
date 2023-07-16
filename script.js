@@ -35,16 +35,16 @@ function Validate() {
     let Password = document.getElementById("Password");
     let Email = document.getElementById("Email");
     if(Email.value == ""){
-        return false
+        return false;
     }
     if(Password.value == ""){
-        return false
+        return false;
     }
     else{
         Email.style.border = "0";
         Password.style.border = "0";
         Email.value = "";
-        return true
+        return true;
     }
 
 }
