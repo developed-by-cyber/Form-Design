@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="top-hold">
+        <div class="top-logo">
+            <p>Designed By Daniel</p>
+        </div>
+    </div>
+    <div class="coming-soon">
+        <div class="bottoms-hold">
+            <div class="bottoms">
+                <h1>Coming Soon</h1>
+
+                <div class="launch-time">
+                    <div class="days">
+                        <p id="days">00</p>
+                        <span>Days</span>
+                    </div>
+                    <div>
+                        <p id="hours">00</p>
+                        <span>Hours</span>
+                    </div>
+                    <div class="min">
+                        <p id="minutes">00</p>
+                        <span>Mins</span>
+                    </div>
+                    <div class="sec">
+                        <p id="seconds">00</p>
+                        <span>Sec</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="pop-hold">
+        <div class="pop">
+            <div class="gif">
+                <img src="./images/Double taps.gif" alt="">
+            </div>
+           <div class="text">
+               <div class="hold">
+                <h1 class="name1">WELCOME</h1>
+                <h1 class="name">Daniel Ibekwe</h1>
+                <div class="btn-holder">
+                    <button>Continue</button>
+                </div>
+               </div>
+           </div>
+        </div>
+    </div> -->
+
+    <div id="overlay" class="overlay">
+        <img src="./images/o6m.gif" alt="">
+    </div>
+    
+
+    <script>
+        var countDownDate = new Date("June 30, 2023 00:00:00").getTime();
+        var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate -now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60 )) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+        },1000);
+
+
+        window.addEventListener('load', function(){
+            // let overlay = document.getElementById("overlay");
+            setTimeout(
+                function open(event){
+                    document.getElementById("overlay").style.opacity = "0";
+                },
+                2500
+            )
+        })
+    </script>
+</body>
+</html>

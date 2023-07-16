@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/remixicon.css">
+</head>
+
+<body>
+    <main>
+        <!-- ===== form ===== -->
+        <form action="./Coming-Soon.html" onsubmit="return Validate()" class="form" id="main">
+
+            <!-- ===== Sign Up ===== -->
+            <div class="sign-up" id="sign-up">
+
+                <!-- ===== Top ===== -->
+                <div class="top">
+                    <h1>Already have an Account? <span id="slide2">Sign In</span></h1>
+                </div>
+                <h1 class="header">Join Us Today!</h1>
+                <p>Sign in with us today to get started!</p>
+
+                <!-- ==== Social Icons ==== -->
+                <div class="social-icons">
+                    <a href="">
+                        <div class="img-holder">
+                            <img src="./images/google.png" alt="google-icon">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="img-holder">
+                            <img src="./images/apple-black-logo.png" alt="google-icon">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="img-holder">
+                            <img src="./images/facebook.png" alt="google-icon">
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="img-holder">
+                            <img src="./images/instagram (2).png" alt="google-icon">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ===== input ===== -->
+                <h1 class="h1">Or Register with email</h1>
+                <input type="text" placeholder="Enter Email">
+                <div class="password">
+                    <input type="password" placeholder="Enter Password">
+                    <i class="ri-eye-off-line"></i>
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="Confirm Password">
+                    <i id="p" class="ri-eye-off-line"></i>
+                </div>
+                <button>Sign In</button>
+            </div>
+
+            <!-- === left === -->
+            <div class="left" id="left-side"></div>
+
+
+            <!-- === right === -->
+            <div class="right" id="right-side">
+
+                <!-- ==== sign-in ==== -->
+                <div class="sign-in" id="sign-in">
+
+                    <!-- ==== top ==== -->
+                    <div class="top">
+                        <h1>Not a member? <span id="slide1">Register Now</span></h1>
+                    </div>
+                    <h1>Hello Again!</h1>
+                    <p>Welcome back you've been missed!</p>
+
+                    <!-- ==== Inputs ==== -->
+                    <div class="email">
+                        <input id="Email" type="text" placeholder="Enter email">
+                    </div>
+                    <div class="password">
+                        <input id="Password" type="password" placeholder="Enter Password">
+                        <i id="pass" onclick="ShowPassword()" class="ri-eye-off-line"></i>
+                        <i id="passes" onclick="HidePassword()" class="ri-eye-line passes"></i>
+                    </div>
+                    <div class="recover">
+                        <h1><a href="#a">Recover Password</a></h1>
+                    </div>
+                    <button type="submit">Sign In</button>
+                    <h1 class="h1">Or continue with</h1>
+
+                    <!-- ==== social Icons ==== -->
+                    <div class="social-icons">
+                        <a href="">
+                            <div class="img-holder">
+                                <img src="./images/google.png" alt="google-icon">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="img-holder">
+                                <img src="./images/apple-black-logo.png" alt="google-icon">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="img-holder">
+                                <img src="./images/facebook.png" alt="google-icon">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="img-holder">
+                                <img src="./images/instagram (2).png" alt="google-icon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==== right ==== -->
+            <div class="righty"></div>
+        </form>
+    </main>
+    <!-- ==== javascript ==== -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
